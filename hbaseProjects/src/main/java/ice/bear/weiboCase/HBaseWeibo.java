@@ -107,6 +107,41 @@ public class HBaseWeibo {
         connection.close();
     }
 
+    /**
+     * 创建微博收件箱表
+     * 方法名 createTableReceiveContentEmails
+     * Table Name weibo:receive_content_email
+     * Rowkey 用户ID
+     * ColumnFamily info
+     * ColumnLabel 用户ID
+     * ColumnValue 取微博内容的Rowkey
+     * version 1000
+     * @param
+     * @throws IOException
+     */
+    public void createTableReceiveContentEmails() throws IOException{
+        // 获得连接
+        Connection connection = getConnection();
+        // 获得admin
+        Admin admin = connection.getAdmin();
+        // 创建表
+        if(!admin.tableExists(TableName.valueOf(WEIBO_CRCEIVE_CONTENT_EMAIL))){
+            HTableDescriptor weibo_receive_content_email =
+                    new HTableDescriptor(TableName.valueOf(WEIBO_CRCEIVE_CONTENT_EMAIL));
+            HColumnDescriptor info = new HColumnDescriptor("info");
+            info.setMinVersions(1000);
+            info.setMaxVersions(1000);
+            info.setBlockCacheEnabled(true);
+            weibo_receive_content_email.addFamily(info);
+            admin.createTable(weibo_receive_content_email);
+        }
+        //关闭连接
+        admin.close();
+        connection.close();
+    }
+
+
+
 
 
     // 程序入口
@@ -117,7 +152,9 @@ public class HBaseWeibo {
         // 创建微博内容表
         // hBaseWeibo.createTableContent();
         // 创建用户关系表
-        hBaseWeibo.createTableRelation();
+        // hBaseWeibo.createTableRelation();
+        // 创建微博收件箱表
+        hBaseWeibo.createTableReceiveContentEmails();
     }
 
 
