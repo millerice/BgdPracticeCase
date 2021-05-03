@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<!--
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License. See accompanying LICENSE file.
+-->
+
+<!-- Put site-specific property overrides in this file. -->
+<configuration>
+	<property>
+		<name>fs.defaultFS</name>
+		<value>hdfs://node01:8020</value>
+	</property>
+	<property>
+		<name>hadoop.tmp.dir</name>
+		<value>/bgd/install/hadoop-2.6.0-cdh5.14.2/hadoopDatas/tempDatas</value>
+	</property>
+	<!--  缓冲区大小，实际工作中根据服务器性能动态调整 -->
+	<property>
+		<name>io.file.buffer.size</name>
+		<value>4096</value>
+	</property>
+	<property>
+	     <name>fs.trash.interval</name>
+	     <value>10080</value>
+	     <description>检查点被删除后的分钟数。 如果为零，垃圾桶功能将被禁用。 
+	     该选项可以在服务器和客户端上配置。 如果垃圾箱被禁用服务器端，则检查客户端配置。 
+	     如果在服务器端启用垃圾箱，则会使用服务器上配置的值，并忽略客户端配置值。</description>
+	</property>
+	<property>
+	     <name>fs.trash.checkpoint.interval</name>
+	     <value>0</value>
+	     <description>垃圾检查点之间的分钟数。 应该小于或等于fs.trash.interval。 
+	     如果为零，则将该值设置为fs.trash.interval的值。 每次检查指针运行时，
+	     它都会从当前创建一个新的检查点，并删除比fs.trash.interval更早创建的检查点。</description>
+	</property>
+</configuration>
