@@ -39,7 +39,7 @@ public class HBaseWeibo {
         Connection connection = ConnectionFactory.createConnection(configuration);
         return connection;
     }
-    // 创建表
+    // 创建微博内容表
     public void createTableContent() throws IOException {
         // 获得连接
         Connection connection = getConnection();
@@ -65,6 +65,49 @@ public class HBaseWeibo {
         connection.close();
     }
 
+    // 创建用户关系表
+    /**
+     * 方法名 createTableRelations
+     * Table Name  weibo:relations
+     * Rowkey  用户 ID
+     * ColumnFamily attends fans
+     * ColumnLabel 关注用户ID 粉丝用户ID
+     * ColumnValue 用户ID
+     * Version 1个版本
+     * @param
+     * @throws IOException
+     */
+    public void createTableRelation() throws IOException{
+        Connection connection = getConnection();
+        Admin admin = connection.getAdmin();
+        // 表不存在，进行创建
+        if(!admin.tableExists(TableName.valueOf(WEIBO_RELATION))){
+            // 设置表名
+            HTableDescriptor weibo_relation = new HTableDescriptor(TableName.valueOf(WEIBO_RELATION));
+            // 设置列族attends
+            HColumnDescriptor attends = new HColumnDescriptor("attends");
+            // 添加版本
+            attends.setMinVersions(1);
+            attends.setMaxVersions(1);
+            attends.setBlockCacheEnabled(true);
+            // 设置列族fans
+            HColumnDescriptor fans = new HColumnDescriptor("fans");
+            // 添加版本
+            fans.setMinVersions(1);
+            fans.setMaxVersions(1);
+            fans.setBlockCacheEnabled(true);
+            // 表中添加列族
+            weibo_relation.addFamily(attends);
+            weibo_relation.addFamily(fans);
+            // 创建表
+            admin.createTable(weibo_relation);
+        }
+        // 关闭
+        admin.close();
+        connection.close();
+    }
+
+
 
     // 程序入口
     public static void main(String[] args) throws IOException {
@@ -72,7 +115,9 @@ public class HBaseWeibo {
         // 创建命名空间
         // hBaseWeibo.createNameSpace();
         // 创建微博内容表
-        hBaseWeibo.createTableContent();
+        // hBaseWeibo.createTableContent();
+        // 创建用户关系表
+        hBaseWeibo.createTableRelation();
     }
 
 

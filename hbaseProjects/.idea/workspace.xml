@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21734582-453c-459f-bc04-cffe3b6587d7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ice/bear/weiboCase/HBaseWeibo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ice/bear/weiboCase/HBaseWeibo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ice/bear/weiboCase/HBaseWeibo.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -22,8 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ice/bear/weiboCase/HBaseWeibo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+            <state relative-caret-position="323">
+              <caret line="118" column="18" lean-forward="true" selection-start-line="118" selection-start-column="18" selection-end-line="118" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -127,7 +125,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -233,12 +231,12 @@
       <option name="presentableId" value="Default" />
       <updated>1619704069607</updated>
       <workItem from="1619704072553" duration="10711000" />
-      <workItem from="1619948141748" duration="7058000" />
+      <workItem from="1619948141748" duration="9837000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17769000" />
+    <option name="totallyTimeSpent" value="20548000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -253,7 +251,7 @@
     <frame x="2785" y="25" width="1452" height="1361" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25395682" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25395682" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -335,8 +333,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ice/bear/weiboCase/HBaseWeibo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+        <state relative-caret-position="323">
+          <caret line="118" column="18" lean-forward="true" selection-start-line="118" selection-start-column="18" selection-end-line="118" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
