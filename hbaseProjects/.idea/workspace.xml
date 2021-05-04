@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21734582-453c-459f-bc04-cffe3b6587d7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/ice/bear/weiboCase/HBaseWeibo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ice/bear/weiboCase/HBaseWeibo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ice/bear/searchCase/NormalSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,11 +32,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ice/bear/weiboCase/HBaseWeibo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="3" column="44" lean-forward="true" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
+            <state relative-caret-position="302">
+              <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ice/bear/searchCase/NormalSearch.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="468">
+              <caret line="242" column="5" lean-forward="true" selection-start-line="242" selection-start-column="5" selection-end-line="242" selection-end-column="5" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -60,6 +77,7 @@
         <option value="$PROJECT_DIR$/src/main/java/ice/bear/weiboCase/createNameSpace.java" />
         <option value="$PROJECT_DIR$/src/main/java/ice/bear/weiboCase/simpleWeibo.java" />
         <option value="$PROJECT_DIR$/src/main/java/ice/bear/weiboCase/HBaseWeibo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ice/bear/searchCase/NormalSearch.java" />
       </list>
     </option>
   </component>
@@ -125,6 +143,24 @@
               <item name="hbaseProjects" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bear" type="462c0819:PsiDirectoryNode" />
+              <item name="searchCase" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hbaseProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hbaseProjects" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bear" type="462c0819:PsiDirectoryNode" />
+              <item name="weiboCase" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hbaseProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hbaseProjects" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -157,7 +193,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.HBaseWeibo">
+  <component name="RunManager" selected="Application.NormalSearch">
     <configuration name="HBaseVersionAndTTL" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ice.bear.HBaseVersionAndTTL" />
       <module name="hbaseProjects" />
@@ -177,6 +213,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ice.bear.weiboCase.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NormalSearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ice.bear.searchCase.NormalSearch" />
+      <module name="hbaseProjects" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ice.bear.searchCase.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -233,6 +282,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.NormalSearch" />
         <item itemvalue="Application.HBaseWeibo" />
         <item itemvalue="Application.HBaseVersionAndTTL" />
       </list>
@@ -249,12 +299,13 @@
       <option name="presentableId" value="Default" />
       <updated>1619704069607</updated>
       <workItem from="1619704072553" duration="10711000" />
-      <workItem from="1619948141748" duration="24499000" />
+      <workItem from="1619948141748" duration="25234000" />
+      <workItem from="1620087177086" duration="7502000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35210000" />
+    <option name="totallyTimeSpent" value="43447000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -269,7 +320,7 @@
     <frame x="2785" y="25" width="1452" height="1361" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.25395682" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.2582734" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -334,25 +385,39 @@
         <state relative-caret-position="-1806" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/core-site.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-810" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ice/bear/HBaseVersionAndTTL.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+        <state relative-caret-position="261">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/core-site.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-810" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ice/bear/weiboCase/HBaseWeibo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="3" column="44" lean-forward="true" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
+        <state relative-caret-position="302">
+          <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ice/bear/searchCase/NormalSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="242" column="5" lean-forward="true" selection-start-line="242" selection-start-column="5" selection-end-line="242" selection-end-column="5" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
