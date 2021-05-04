@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21734582-453c-459f-bc04-cffe3b6587d7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ice/bear/searchCase/NormalSearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ice/bear/searchCase/FilterSearch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ice/bear/searchCase/NormalSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ice/bear/searchCase/NormalSearch.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -44,13 +45,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ice/bear/searchCase/NormalSearch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="242" column="5" lean-forward="true" selection-start-line="242" selection-start-column="5" selection-end-line="242" selection-end-column="5" />
+            <state relative-caret-position="318">
+              <caret line="205" column="109" lean-forward="true" selection-start-line="203" selection-start-column="20" selection-end-line="205" selection-end-column="109" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ice/bear/searchCase/FilterSearch.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="140" column="33" selection-start-line="140" selection-start-column="33" selection-end-line="140" selection-end-column="33" />
+              <folding>
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
@@ -78,6 +91,8 @@
         <option value="$PROJECT_DIR$/src/main/java/ice/bear/weiboCase/simpleWeibo.java" />
         <option value="$PROJECT_DIR$/src/main/java/ice/bear/weiboCase/HBaseWeibo.java" />
         <option value="$PROJECT_DIR$/src/main/java/ice/bear/searchCase/NormalSearch.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ice/bear/searchCase/filterSearch.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ice/bear/searchCase/FilterSearch.java" />
       </list>
     </option>
   </component>
@@ -193,7 +208,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.NormalSearch">
+  <component name="RunManager" selected="Application.FilterSearch">
+    <configuration name="FilterSearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ice.bear.searchCase.FilterSearch" />
+      <module name="hbaseProjects" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ice.bear.searchCase.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HBaseVersionAndTTL" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ice.bear.HBaseVersionAndTTL" />
       <module name="hbaseProjects" />
@@ -282,6 +310,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FilterSearch" />
         <item itemvalue="Application.NormalSearch" />
         <item itemvalue="Application.HBaseWeibo" />
         <item itemvalue="Application.HBaseVersionAndTTL" />
@@ -300,12 +329,12 @@
       <updated>1619704069607</updated>
       <workItem from="1619704072553" duration="10711000" />
       <workItem from="1619948141748" duration="25234000" />
-      <workItem from="1620087177086" duration="7502000" />
+      <workItem from="1620087177086" duration="11339000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43447000" />
+    <option name="totallyTimeSpent" value="47284000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -329,7 +358,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.42204082" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5232653" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -412,10 +441,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ice/bear/searchCase/NormalSearch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="242" column="5" lean-forward="true" selection-start-line="242" selection-start-column="5" selection-end-line="242" selection-end-column="5" />
+        <state relative-caret-position="318">
+          <caret line="205" column="109" lean-forward="true" selection-start-line="203" selection-start-column="20" selection-end-line="205" selection-end-column="109" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hbase/hbase-client/1.2.0-cdh5.14.2/hbase-client-1.2.0-cdh5.14.2.jar!/org/apache/hadoop/hbase/filter/QualifierFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="23" column="39" lean-forward="true" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+          <folding>
+            <element signature="e#926#927#0" expanded="true" />
+            <element signature="e#972#973#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ice/bear/searchCase/FilterSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="140" column="33" selection-start-line="140" selection-start-column="33" selection-end-line="140" selection-end-column="33" />
+          <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>

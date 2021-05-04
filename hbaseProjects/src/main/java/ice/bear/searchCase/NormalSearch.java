@@ -215,19 +215,6 @@ public class NormalSearch {
         connection.close();
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
     public static void main(String[] args) throws IOException {
         NormalSearch normalSearch = new NormalSearch();
         // 创建表
