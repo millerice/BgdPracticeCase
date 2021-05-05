@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21734582-453c-459f-bc04-cffe3b6587d7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ice/bear/deleteCase/DeleteHbaseData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ice/bear/searchCase/SpecialFilterSearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ice/bear/hbaseAndMR/caseOne/HBaseMR.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ice/bear/hbaseAndMR/caseOne/HBaseReadMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ice/bear/hbaseAndMR/caseOne/HBaseWriteReducer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ice/bear/searchCase/NormalSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ice/bear/searchCase/NormalSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ice/bear/searchCase/NormalSearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ice/bear/searchCase/NormalSearch.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -34,26 +37,35 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ice/bear/searchCase/SpecialFilterSearch.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ice/bear/hbaseAndMR/caseOne/HBaseReadMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="177" column="44" lean-forward="true" selection-start-line="177" selection-start-column="44" selection-end-line="177" selection-end-column="44" />
+            <state relative-caret-position="870">
+              <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
-                <element signature="method#printlnResult#0;class#SpecialFilterSearch#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ice/bear/hbaseAndMR/caseOne/HBaseWriteReducer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="580">
+              <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ice/bear/deleteCase/DeleteHbaseData.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ice/bear/hbaseAndMR/caseOne/HBaseMR.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="55" column="5" lean-forward="true" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
+            <state relative-caret-position="581">
+              <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
@@ -80,11 +92,14 @@
         <option value="$PROJECT_DIR$/src/main/java/ice/bear/weiboCase/createNameSpace.java" />
         <option value="$PROJECT_DIR$/src/main/java/ice/bear/weiboCase/simpleWeibo.java" />
         <option value="$PROJECT_DIR$/src/main/java/ice/bear/weiboCase/HBaseWeibo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ice/bear/searchCase/NormalSearch.java" />
         <option value="$PROJECT_DIR$/src/main/java/ice/bear/searchCase/filterSearch.java" />
         <option value="$PROJECT_DIR$/src/main/java/ice/bear/searchCase/FilterSearch.java" />
         <option value="$PROJECT_DIR$/src/main/java/ice/bear/searchCase/SpecialFilterSearch.java" />
         <option value="$PROJECT_DIR$/src/main/java/ice/bear/deleteCase/DeleteHbaseData.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ice/bear/hbaseAndMR/caseOne/HBaseReadMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ice/bear/hbaseAndMR/caseOne/HBaseWriteReducer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ice/bear/hbaseAndMR/caseOne/HBaseMR.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ice/bear/searchCase/NormalSearch.java" />
       </list>
     </option>
   </component>
@@ -94,6 +109,17 @@
         <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="hbaseProjects" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
   </component>
   <component name="MavenRunner">
     <option name="vmOptions" value="-DarchetypeCatalog=internal" />
@@ -110,8 +136,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -152,19 +176,19 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="bear" type="462c0819:PsiDirectoryNode" />
-              <item name="deleteCase" type="462c0819:PsiDirectoryNode" />
+              <item name="caseOne" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hbaseProjects" type="b2602c69:ProjectViewProjectNode" />
               <item name="hbaseProjects" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -191,7 +215,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.DeleteHbaseData">
+  <component name="RunManager" selected="Application.HBaseMR">
     <configuration name="DeleteHbaseData" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ice.bear.deleteCase.DeleteHbaseData" />
       <module name="hbaseProjects" />
@@ -218,12 +242,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HBaseWeibo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ice.bear.weiboCase.HBaseWeibo" />
+    <configuration name="HBaseMR" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ice.bear.hbaseAndMR.caseOne.HBaseMR" />
       <module name="hbaseProjects" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ice.bear.weiboCase.*" />
+          <option name="PATTERN" value="ice.bear.hbaseAndMR.caseOne.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -306,11 +330,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HBaseMR" />
+        <item itemvalue="Application.NormalSearch" />
         <item itemvalue="Application.DeleteHbaseData" />
         <item itemvalue="Application.SpecialFilterSearch" />
         <item itemvalue="Application.FilterSearch" />
-        <item itemvalue="Application.NormalSearch" />
-        <item itemvalue="Application.HBaseWeibo" />
       </list>
     </recent_temporary>
   </component>
@@ -326,12 +350,13 @@
       <updated>1619704069607</updated>
       <workItem from="1619704072553" duration="10711000" />
       <workItem from="1619948141748" duration="25234000" />
-      <workItem from="1620087177086" duration="16790000" />
+      <workItem from="1620087177086" duration="19580000" />
+      <workItem from="1620179692312" duration="7285000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52735000" />
+    <option name="totallyTimeSpent" value="62810000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -346,7 +371,7 @@
     <frame x="2785" y="25" width="1452" height="1361" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.2582734" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2582734" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -355,7 +380,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5232653" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5371429" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -370,7 +395,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.3294964" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" />
@@ -458,17 +483,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ice/bear/searchCase/NormalSearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="82" column="46" lean-forward="true" selection-start-line="82" selection-start-column="46" selection-end-line="82" selection-end-column="46" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ice/bear/searchCase/SpecialFilterSearch.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="141">
@@ -483,10 +497,51 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ice/bear/deleteCase/DeleteHbaseData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="55" column="5" lean-forward="true" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
+        <state relative-caret-position="406">
+          <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ice/bear/hbaseAndMR/caseOne/HBaseReadMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ice/bear/hbaseAndMR/caseOne/HBaseWriteReducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="580">
+          <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ice/bear/searchCase/NormalSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="228" column="35" lean-forward="true" selection-start-line="228" selection-start-column="35" selection-end-line="228" selection-end-column="35" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ice/bear/hbaseAndMR/caseOne/HBaseMR.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="581">
+          <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+          <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>

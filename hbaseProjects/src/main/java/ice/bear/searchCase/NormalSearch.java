@@ -226,6 +226,6 @@ public class NormalSearch {
         // get 方式查询
         // normalSearch.getDataByRowkey();
         // scan 方式查询
-        normalSearch.scanData();
+        // normalSearch.scanData();
     }
 }
