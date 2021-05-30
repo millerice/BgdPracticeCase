@@ -21,7 +21,7 @@ object UpdateStateBykeyWordCount {
     // checkpoint路径
     ssc.checkpoint("hdfs://node01:8020/streamingCheckpoint")
     // 数据输入
-    val dstream: ReceiverInputDStream[String] = ssc.socketTextStream("node01", 8020)
+    val dstream: ReceiverInputDStream[String] = ssc.socketTextStream("node01", 8022)
     // 数据处理
     val wordCountDStream = dstream.flatMap(_.split(","))
       .map((_, 1))
