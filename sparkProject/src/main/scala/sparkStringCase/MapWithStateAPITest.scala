@@ -25,25 +25,25 @@ object MapWithStateAPITest {
     // 数据转换成rdd
     val initialRDD = sc.parallelize(List(("dummy", 100L), ("source", 32L)))
     // 数据上下文处理
-    val stateSpec = StateSpec.function((currentBatchTime: Time, key: String,
-                                        value: Option[Int], currentState: State[Long]) => {
-      val sum = value.getOrElse(0).toLong + currentState.getOption.getOrElse(0L)
-      val output = (key, sum)
-      if (!currentState.isTimingOut()){
-        currentState.update(sum)
-      }
-      Some(output)
-    }).initialState(initialRDD).numPartitions(2).timeout(Seconds(30))
+//    val stateSpec = StateSpec.function((currentBatchTime: Time, key: String,
+//                                        value: Option[Int], currentState: State[Long]) => {
+//      val sum = value.getOrElse(0).toLong + currentState.getOption.getOrElse(0L)
+//      val output = (key, sum)
+//      if (!currentState.isTimingOut()){
+//        currentState.update(sum)
+//      }
+//      Some(output)
+//    }).initialState(initialRDD).numPartitions(2).timeout(Seconds(30))
     // 使用mapWithState处理
-    val result = wordsDStream.mapWithState(stateSpec)
+//    val result = wordsDStream.mapWithState(stateSpec)
     // 结果打印
-    result.print()
-    result.stateSnapshots().print()
+//    result.print()
+//    result.stateSnapshots().print()
     // 启动streaming处理流
-    ssc.start()
+//    ssc.start()
     // 停止
-    ssc.stop(false)
+//    ssc.stop(false)
     // 等待程序结束
-    ssc.awaitTermination()
+//    ssc.awaitTermination()
   }
 }
