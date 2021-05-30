@@ -18,7 +18,7 @@ object MapWithStateAPITest {
     // checkpoint路径
     ssc.checkpoint("hdfs://node01:8020/streamingCheckpoint")
     // 从socket端接收数据
-    val lines = ssc.socketTextStream("node01", 8020, StorageLevel.MEMORY_AND_DISK_SER)
+    val lines = ssc.socketTextStream("node01", 8022, StorageLevel.MEMORY_AND_DISK_SER)
     // 数据切分
     val words = lines.flatMap(_.split(","))
     val wordsDStream = words.map(x => (x, 1))
