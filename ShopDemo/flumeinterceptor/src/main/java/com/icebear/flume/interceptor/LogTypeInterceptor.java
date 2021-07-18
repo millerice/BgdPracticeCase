@@ -12,31 +12,33 @@ import org.apache.flume.interceptor.Interceptor;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
-public class LogETLInterceptor implements Interceptor {
+public class LogTypeInterceptor implements Interceptor {
   @Override
-  public void initialize(){
+  public void initialize() {
 
   }
+
+  @Override
   public Event intercept(Event event) {
 
-    // 1 获取数据
+    // 区分日志类型：   body  header
+    // 1 获取body数据
     byte[] body = event.getBody();
     String log = new String(body, Charset.forName("UTF-8"));
 
-    // 2 判断数据类型并向Header中赋值
+    // 2 获取header
+    Map<String, String> headers = event.getHeaders();
+
+    // 3 判断数据类型并向Header中赋值
     if (log.contains("start")) {
-      if (LogUtils.validateStart(log)){
-        return event;
-      }
+      headers.put("topic","topic_start");
     }else {
-      if (LogUtils.validateEvent(log)){
-        return event;
-      }
+      headers.put("topic","topic_event");
     }
 
-    // 3 返回校验结果
-    return null;
+    return event;
   }
 
   @Override
@@ -47,10 +49,9 @@ public class LogETLInterceptor implements Interceptor {
     for (Event event : events) {
       Event intercept1 = intercept(event);
 
-      if (intercept1 != null){
-        interceptors.add(intercept1);
-      }
+      interceptors.add(intercept1);
     }
+
     return interceptors;
   }
 
@@ -59,11 +60,11 @@ public class LogETLInterceptor implements Interceptor {
 
   }
 
-  public static class Builder implements Interceptor.Builder{
+  public static class Builder implements  Interceptor.Builder{
 
     @Override
     public Interceptor build() {
-      return new LogETLInterceptor();
+      return new LogTypeInterceptor();
     }
 
     @Override
